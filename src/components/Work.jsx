@@ -46,8 +46,8 @@ const Work = () => {
             <Text fontSize={fontSizeTitle}>Swipe Lover</Text>
             <Text fontSize={fontSizeText}>Landing Page of a platform Swipe Lover which is a secure, AI-powered app where you can meet authentic connections and enjoy live interactions. </Text>
             <Flex gap='2' flexWrap='wrap' direction='row' my='6' >
-              <Text bg={useColorModeValue('gray.300', 'gray.600')} rounded='2xl' px='4' >ReactJS</Text>
-              <Text bg={useColorModeValue('gray.300', 'gray.600')} rounded='2xl' px='4' >Chakra UI</Text>
+              <Text bg={useColorModeValue('gray.300', 'gray.600')} fontSize={fontSizeText} rounded='2xl' px='4' >ReactJS</Text>
+              <Text bg={useColorModeValue('gray.300', 'gray.600')} fontSize={fontSizeText} rounded='2xl' px='4' >Chakra UI</Text>
             </Flex>
 
             <Link href='https://www.swipelover.com' isExternal mt={'4'} fontSize={'lg'} textColor={useColorModeValue('gray.600','gray.400')}>
@@ -60,12 +60,12 @@ const Work = () => {
           <Box order={{base:2, lg:1}}  w={{base:'100%', lg:'50%'}} bg={useColorModeValue('gray.100','gray.700')} textAlign={'start'} roundedTopLeft={{base:'none', lg:'xl'}} roundedBottomLeft='xl' roundedBottomRight={{base:'xl', lg:'none'}}  p={{base:'4',md:'8',lg:'12'}}>
             <Text fontSize={fontSizeTitle}>TourToPk</Text>
             <Text fontSize={fontSizeText}>Tourism Platform for Tourists in Pakistan, With Places Info, Hotels Booking, Tour Packages and much more. Also Platform for Hotel Managers and Tour Operators to display there rooms and packages. </Text>
-            <Flex gap='2' flexWrap='wrap' direction='row' my='6' >
-              <Text bg={useColorModeValue('gray.300', 'gray.600')} rounded='2xl' px='4' >ReactJS</Text>
-              <Text bg={useColorModeValue('gray.300', 'gray.600')} rounded='2xl' px='4' >ExpressJS</Text>
-              <Text bg={useColorModeValue('gray.300', 'gray.600')} rounded='2xl' px='4' >NodeJS</Text>
-              <Text bg={useColorModeValue('gray.300', 'gray.600')} rounded='2xl' px='4' >MongoDB</Text>
-              <Text bg={useColorModeValue('gray.300', 'gray.600')} rounded='2xl' px='4' >Bootstrap</Text>
+            <Flex gap='2' flexWrap='wrap' direction='row' my='6'  >
+              <Text bg={useColorModeValue('gray.300', 'gray.600')} fontSize={fontSizeText} rounded='2xl' px='4' >ReactJS</Text>
+              <Text bg={useColorModeValue('gray.300', 'gray.600')} fontSize={fontSizeText} rounded='2xl' px='4' >ExpressJS</Text>
+              <Text bg={useColorModeValue('gray.300', 'gray.600')} fontSize={fontSizeText} rounded='2xl' px='4' >NodeJS</Text>
+              <Text bg={useColorModeValue('gray.300', 'gray.600')} fontSize={fontSizeText} rounded='2xl' px='4' >MongoDB</Text>
+              <Text bg={useColorModeValue('gray.300', 'gray.600')} fontSize={fontSizeText} rounded='2xl' px='4' >Bootstrap</Text>
             </Flex>
 
             <Link href='https://tourtopk.vercel.app/' isExternal mt={'4'} fontSize={'lg'} textColor={useColorModeValue('gray.600','gray.400')}>

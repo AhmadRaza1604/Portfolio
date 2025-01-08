@@ -11,7 +11,6 @@ import {
 } from '@chakra-ui/react';
 
 const About = () => {
-  const imagew = useBreakpointValue({ base: 200, md: 300, lg: 470 });
   const imageh = useBreakpointValue({ base: 200, md: 300, lg: 470 });
   const fontSizeTitle = useBreakpointValue({ base: 'xl', md: '2xl', lg: '3xl' });
   const fontSizeText = useBreakpointValue({ base: 'sm', md: 'md', lg: 'lg' });
@@ -39,7 +38,7 @@ const About = () => {
             <Flex justifyContent={'center'} alignItems={'center'}>
               <Image
                 src={'/files/AR2.jpg'}
-                // w={imagew}
+                
                 height={imageh}
                 mt={'3'}
                 shadow={'2xl'}

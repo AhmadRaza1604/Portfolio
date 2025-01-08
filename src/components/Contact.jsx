@@ -9,6 +9,7 @@ import {
   useColorModeValue,
   IconButton,
   useClipboard,
+  Icon,
 } from '@chakra-ui/react';
 import { EmailIcon, PhoneIcon, CopyIcon } from '@chakra-ui/icons';
 import { FaGithub, FaGoogle, FaLinkedinIn } from 'react-icons/fa6';
@@ -34,38 +35,38 @@ const Contact = () => {
           <Button rounded={'3xl'} size={{ base: 'sm', md: 'md', lg: 'lg' }} bg={useColorModeValue('gray.300', 'gray.600')}>Get In Touch</Button>
         </Flex>
         <Flex justify={'center'} mb={10}>
-          <Text fontSize={{ base: 'lg', md: '2xl' }} px={{ base: 2, md: 72 }} textAlign={'center'} >Feel free to reach out to me if you are looking for a developer, have a query, or simply want to connect.</Text>
+          <Text fontSize={{ base: 'lg', md: '2xl' }} px={{ base: 1, md: 1 }} textAlign={'center'} >Feel free to reach out to me if you are looking for a developer, have a query, or simply want to connect.</Text>
         </Flex>
-        <Flex justifyContent={'center'} mb={4} >
-          <Text fontSize={{ base: 'xl', md: '4xl' }} px={{ base: 2, md: 72 }} textAlign={'center'} >
+        <Flex justifyContent={'center'} mb={1} >
+          <Text fontSize={{ base: 'md', md: '3xl' }} px={{ base: 1, md: 1 }} textAlign={'center'} >
             <EmailIcon /> ahmadraza16042002@gmail.com
-            <IconButton
+            <Icon
               aria-label="Copy email"
-              icon={<CopyIcon />}
-              size="lg"
+              size="lg" 
+              ml={{base:'1', md:'4'}}
               bg='transparent'
-              ml={2}
               onClick={onCopyEmail}
-            />
+              _hover={{cursor:'pointer'}}
+            > <CopyIcon /></Icon>
             {hasCopiedEmail && <Text as="span" ml={2} color="green.500">Copied</Text>}
           </Text>
         </Flex>
         <Flex justify={'center'} mb={10} >
-          <Text fontSize={{ base: 'xl', md: '4xl' }} px={{ base: 2, md: 72 }} textAlign={'center'} >
+          <Text fontSize={{ base: 'md', md: '3xl' }} px={{ base: 1, md: 1 }} textAlign={'center'} >
             <PhoneIcon /> +923265948478
-            <IconButton
-              aria-label="Copy phone number"
-              icon={<CopyIcon />}
-              size="lg"
+            <Icon
+              aria-label="Copy email"
+              size="lg" 
+              ml={{base:'1', md:'4'}}
               bg='transparent'
-              ml={2}
               onClick={onCopyPhone}
-            />
+              _hover={{cursor:'pointer'}}
+            > <CopyIcon /></Icon>
             {hasCopiedPhone && <Text as="span" ml={2} color="green.500">Copied</Text>}
           </Text>
         </Flex>
         <Flex justify={'center'} mb={4} >
-          <Text fontSize={{ base: 'md', md: 'lg' }} px={{ base: 2, md: 72 }} textAlign={'center'} >You may also find me on these platforms!</Text>
+          <Text fontSize={{ base: 'md', md: 'lg' }} px={{ base: 1, md: 1 }} textAlign={'center'} >You may also find me on these platforms!</Text>
         </Flex>
         <Flex py={{ base: 3, md: 4, lg: 5 }} alignItems={'center'} justifyContent={'center'}>
           <Link fontSize={fontSizeText} mr={3}
