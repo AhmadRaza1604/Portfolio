@@ -10,7 +10,6 @@ import {
   Link,
 } from '@chakra-ui/react';
 import { FaGithub, FaGoogle, FaLinkedinIn } from 'react-icons/fa6';
-import Person from '../utils/images/AhmadRaza.jpg';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 
 const Top = () => {
@@ -31,6 +30,7 @@ const Top = () => {
         <Stack
           direction={{ base: 'column', md: 'row' }}  // Vertical stack on mobile, row on larger screens
           spacing={{ base: 10, md: 16 }}
+          justifyContent={'space-between'}
         >
           {/* Left Section: Text */}
           <Box width={{ base: '100%', md: '85%' }} order={{ base: 2, md: 1 }}>
@@ -100,10 +100,10 @@ const Top = () => {
           <Box width={{ base: '100%', md: '40%' }} justifyContent={'center'} order={{ base: 1, md: 2 }}>
             <Flex justifyContent={'center'} alignItems={'center'}>
               <Image
-                src={Person}
+                src={'/files/AhmadRaza.jpg'}
                 height={imageSize}
                 alt='Profile'
-                rounded={'3xl'}
+                rounded={'lg'}
               />
             </Flex>
           </Box>

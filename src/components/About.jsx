@@ -35,7 +35,7 @@ const About = () => {
         >
           {/* Image Section */}
           <Box width={{ base: '100%', md: '50%' }} justifyContent={'center'}>
-            <Flex justifyContent={'center'} alignItems={'center'}>
+            <Flex justifyContent={'center'} alignItems={'center'} w={{base:'full', lg:'fit-content'}}>
               <Image
                 src={'/files/AR2.jpg'}
                 
