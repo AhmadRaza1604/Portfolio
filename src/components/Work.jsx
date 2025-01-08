@@ -57,7 +57,7 @@ const Work = () => {
           </Box>
         </Flex>
         <Flex w='90%' direction={{base:'column', lg:'row'}} h='fit-content' shadow={'xl'} rounded={'xl'}>
-          <Box w={{base:'100%', lg:'50%'}} bg={useColorModeValue('gray.100','gray.700')} textAlign={'start'} roundedTopLeft='xl' roundedBottomLeft={{base:'none', lg:'xl'}} roundedTopRight={{base:'xl', lg:'none'}}  p={{base:'4',md:'8',lg:'12'}}>
+          <Box order={{base:2, lg:1}}  w={{base:'100%', lg:'50%'}} bg={useColorModeValue('gray.100','gray.700')} textAlign={'start'} roundedTopLeft={{base:'none', lg:'xl'}} roundedBottomLeft='xl' roundedBottomRight={{base:'xl', lg:'none'}}  p={{base:'4',md:'8',lg:'12'}}>
             <Text fontSize={fontSizeTitle}>TourToPk</Text>
             <Text fontSize={fontSizeText}>Tourism Platform for Tourists in Pakistan, With Places Info, Hotels Booking, Tour Packages and much more. Also Platform for Hotel Managers and Tour Operators to display there rooms and packages. </Text>
             <Flex gap='2' flexWrap='wrap' direction='row' my='6' >
@@ -73,10 +73,10 @@ const Work = () => {
             </Link>
 
           </Box>
-          <Box w={{base:'100%', lg:'50%'}} bg={useColorModeValue('gray.200','gray.600')} roundedBottomRight='xl' roundedTopRight={{base:'none', lg:'xl'}} roundedBottomLeft={{base:'xl', lg:'none'}} p={{base:'4',md:'8',lg:'12'}}>
+          <Box order={{base:1,lg:2}} w={{base:'100%', lg:'50%'}} bg={useColorModeValue('gray.200','gray.600')} roundedBottomRight={{base:'none', lg:'xl'}} roundedTopRight='xl' roundedTopLeft={{base:'xl', lg:'none'}}p={{base:'4',md:'8',lg:'12'}}>
             
             <Link href='https://tourtopk.vercel.app/' isExternal mt={'4'} fontSize={'lg'} textColor={useColorModeValue('gray.600','gray.400')}>
-            <Image src='/files/TourToPK.png'  rounded='xl' w={imagew} h={imageh} _hover={{transform:'scale(1.05)'}} transitionDuration={'0.5s'}/>
+            <Image src='/files/TourToPk.png'  rounded='xl' w={imagew} h={imageh} _hover={{transform:'scale(1.05)'}} transitionDuration={'0.5s'}/>
             </Link>
 
           </Box>
